@@ -165,6 +165,11 @@
             }
         }
     }
+    @media  screen and (max-width:450px) {
+        p{
+            font-size: 10px;
+        }
+    }
 
     .banner {
         img {
@@ -193,8 +198,7 @@
         padding: 0 50px;
         grid-gap: 20px;
       
-            max-width: 100%;
-            overflow-x: auto;
+        height: 100px;
           
         &_item:hover{
             overflow: hidden;
@@ -238,6 +242,11 @@
             button{
                 display: none;
                
+            }
+        }
+        @media  screen and (max-width:450px) {
+            p{
+                font-size: 10px;
             }
         }
       

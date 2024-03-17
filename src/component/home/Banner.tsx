@@ -1,6 +1,5 @@
 
 import '@coreui/coreui/dist/css/coreui.min.css'
-
 import {CCarousel,CCarouselItem} from "@coreui/react"
 function Banner() {
   return (
