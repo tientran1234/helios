@@ -4,6 +4,7 @@ import Navbar from '../component/home/Navbar';
 import Banner from '../component/home/Banner';
 import useStore from '../zustand/changeToggle';
 import ListProduct from '../component/home/ListProduct';
+import Introduction from '../component/home/Introduction';
 
 
 
@@ -16,6 +17,7 @@ function Home() {
       {isMenuVisible ? <>
         <Banner />
         <ListProduct/>
+        <Introduction/>
       </>
         : <>
         </>}
