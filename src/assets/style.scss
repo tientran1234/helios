@@ -193,6 +193,11 @@
             }
         }
     }
+    @media  screen and (max-width:450px) {
+        p{
+            font-size: 10px;
+        }
+    }
 
     .banner {
         img {
@@ -220,11 +225,11 @@
         grid-template-columns: 0.8fr 0.8fr 0.8fr 0.8fr;
         padding: 20px 50px;
         grid-gap: 20px;
-        position: relative;
-        max-width: 100%;
-        overflow-x: auto;
-
-        &_item:hover {
+      
+            max-width: 100%;
+            overflow-x: auto;
+          
+        &_item:hover{
             overflow: hidden;
             align-items: center;
             text-align: center;
@@ -284,153 +289,8 @@
                 display: none;
 
             }
-
         }
-
-        @media screen {}
-
+      
     }
-
-    //---------------------Introduction-----------------------------//
-
-
-    .introduction {
-        
-        display: grid;
-        grid-template-columns: 2fr 1fr;
-        background-color: $primary-background;
-        grid-gap: 20px;
-        padding: 50px 50px;
-        margin-top: 100px;
-
-        &-img {
-
-            grid-column-start: 1;
-
-            &_item {
-                display: grid;
-                grid-template-columns: 1fr 1fr;
-                grid-gap: 20px;
-
-                img {
-                    width: 100%;
-                    height: 100%;
-                }
-
-                video {
-                    width: 100%;
-                    height: 100%;
-                }
-            }
-
-            &.sticky {
-                grid-column-start: 1;
-                position: fixed;
-                top: 150px;
-                left: 0;
-                width: 1430px;
-                padding: 20px 50px;
-                height: 1500px;
-                z-index: 1;
-                .introduction-img_item {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-gap: 20px;
-
-                    img {
-                        width: 100%;
-                        height: 100%;
-                    }
-
-                    video {
-                        width: 100%;
-                        height: 100%;
-                    }
-                }
-
-            }
-        }
-
-        &-content {
-            grid-column-start: 2;
-
-            h1 {
-                padding: 20px 0;
-            }
-
-            &_icon {
-                padding-bottom: 10px;
-            }
-
-            &_size {
-                display: flex;
-                justify-content: space-between;
-                flex-wrap: wrap;
-
-                p:hover {
-                    text-decoration: underline;
-                    cursor: pointer;
-                }
-            }
-
-            &_buy {
-                button {
-                    margin: 20px 0;
-                }
-
-            }
-
-            margin-left: 100px;
-        }
-    }
-    //----------------------------Top Collection----------------------//
-    .top-collection{
-        height: 1000px;
-        margin-top: 100px;
-        display: grid;
-        grid-template-columns: 0.5fr 0.5fr;
-        padding:0 50px ;
-        grid-gap: 200px;
-        height: 100%;
-     
-        img{
-            width: 100%;
-        }
-        h1{
-            padding:50px 0;
-        }
-        
-    }
-    .hide{
-        margin-top: 100px;
-        visibility: hidden;
-   }
-
-
-
-.collab{
-    
   
-    display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0 50px;
-    grid-gap:30px;
-   
-    &-item{
-        display: inline-block;
-        color: white;
-        text-align: center;
-        margin-top: 100px;
-        text-decoration: none;
-        height: 600px;
-       
-        img{
-            height: 100%;
-            width: 100%;
-         
-        }
-    }
-    &-item:hover{
-        background-color: #777;
-    }
-}
+  
