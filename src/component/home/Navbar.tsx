@@ -8,7 +8,27 @@ import useStore from '../../zustand/changeToggle';
 function Navbar() {
     const [isDetailVisible, setIsDetailVisible] = useState(true);
     const { isMenuVisible, toggleMenu } = useStore();
+    const [isFixed, setIsFixed] = useState(false);
 
+    useEffect(() => {
+        const handleScroll = () => {
+            const navbar = document.querySelector('.navbar_helios') as HTMLElement;
+            const navbarHeight =navbar.offsetHeight;;
+            const scrollPosition = window.scrollY;
+
+            if (scrollPosition > navbarHeight) {
+                setIsFixed(true);
+            } else {
+                setIsFixed(false);
+            }
+        };
+
+        window.addEventListener('scroll', handleScroll);
+
+        return () => {
+            window.removeEventListener('scroll', handleScroll);
+        };
+    }, []);
     const handleToggleClick = () => {
         toggleMenu();
     };
@@ -30,7 +50,7 @@ function Navbar() {
 
     return (
         <div>
-            <div className='navbar_helios'>
+            <div className={`navbar_helios ${isFixed ? 'fixed' : ''}`}>
                 <div className="navbar_helios-content">
                     <p>GLOBAL SHOP </p>
                     <p>ABOUT US </p>

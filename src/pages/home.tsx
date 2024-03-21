@@ -5,8 +5,8 @@ import Banner from '../component/home/Banner';
 import useStore from '../zustand/changeToggle';
 import ListProduct from '../component/home/ListProduct';
 import Introduction from '../component/home/Introduction';
-
-
+import TopCollection from "../component/home/TopCollection";
+import Collab from "../component/home/Collab";
 
 function Home() {
   const { isMenuVisible } = useStore();
@@ -18,6 +18,8 @@ function Home() {
         <Banner />
         <ListProduct/>
         <Introduction/>
+        <TopCollection/>
+        <Collab/>
       </>
         : <>
         </>}

@@ -3,7 +3,7 @@
 function ListProduct() {
   return (
     <div>
-        <h1 >DANH MỤC SẢN PHẨM</h1>
+        <h1 >  </h1>
         <div className="product-list">
             <div className="product-list_item">
                 <img src="https://heliosjewels.vn/cdn/shop/files/DC-min_460x.webp?v=1709604639" alt=""  />
