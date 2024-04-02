@@ -1,7 +1,7 @@
     $font-stack: "Oswald, sans-serif";
     $primary-color: white;
     $primary-background: black;
-
+    
     @-webkit-keyframes slide-top {
         0% {
             -webkit-transform: translate(-50%, 0);
@@ -71,7 +71,7 @@
     }
 
     body,
-    p {
+    p,li {
         font-family: $font-stack !important;
         color: $primary-color !important;
         box-sizing: border-box;
@@ -82,7 +82,7 @@
 
     }
 
-    h1 {
+    h1,h2 {
         background-color: transparent !important;
         font-size: 25px !important;
         margin: 0 !important;
@@ -412,25 +412,64 @@
     
   
     display: grid;
-    grid-template-columns: 1fr 1fr 1fr 1fr;
-    padding: 0 50px;
-    grid-gap:30px;
+    grid-auto-flow: column;
+    grid-auto-columns: 23%;
+    padding: 0 20px;
+    grid-gap: 20px;
+    overflow-y: hidden;
+    overflow-x: auto;
+    overscroll-behavior-inline:contain ;
+  
    
     &-item{
-        display: inline-block;
+        // display: inline-block;
+        background-color: red!important;
         color: white;
         text-align: center;
-        margin-top: 100px;
-        text-decoration: none;
+        margin-top: 0px;
         height: 600px;
+         box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+         
        
         img{
             height: 100%;
             width: 100%;
-         
+            border-radius: 20px;
         }
     }
     &-item:hover{
-        background-color: #777;
+        background-color: #777!important;
     }
+}
+.footer{
+    h2{
+        color:white;
+        margin:0;
+        padding:0
+    }
+    h1{
+        color:white;
+        margin:0;
+        padding:0
+    }
+    
+    background-color: $primary-background!important;
+    margin-top: 50px;
+    display: grid!important;
+    margin: 100px;
+    grid-gap:10%;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-auto-flow: column;
+    grid-template-rows:1fr ;
+    .customer-info{
+        align-self: flex-start;
+    }
+    .about-us{
+        align-self: flex-start;
+    }
+    .customer-care{
+        align-self: flex-start;
+    }
+     
+  
 }

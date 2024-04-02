@@ -64,6 +64,7 @@ function Navbar() {
                     <p>LOGIN</p>
                     <p>FIND</p>
                 </div>
+                <hr style={{borderColor:"white"}}/>
                 <div className={`navbar_helios-detail ${isDetailVisible ? 'show' : 'hide'}`}>
                     <p>JEWELRY</p>
                     <p>GIFT</p>
@@ -89,6 +90,7 @@ function Navbar() {
             <>
              
             </>:<>
+            
             <div className="navbar-menu_responsive">
                 <p>JEWELRY</p>
                 <p>GIFT</p>
