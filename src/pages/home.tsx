@@ -21,7 +21,8 @@ function Home() {
         <Introduction/>
         <TopCollection/>
         <Collab/>
-        <Footer/>
+        <Footer/> 
+      
       </>
         : <>
         </>}

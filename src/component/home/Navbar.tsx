@@ -1,8 +1,11 @@
 import  { useState, useEffect } from 'react';
-
 import 'bootstrap/dist/css/bootstrap.min.css';
-
+import { IoMdLogIn } from "react-icons/io";
 import useStore from '../../zustand/changeToggle';
+import { MdFindInPage } from "react-icons/md";
+import { RiAccountCircleFill } from "react-icons/ri";
+import { IoCart } from "react-icons/io5";
+
 
 
 function Navbar() {
@@ -60,9 +63,16 @@ function Navbar() {
                     <img src="https://heliosjewels.vn/cdn/shop/files/logo_500x.png?v=1652960279" alt="" />
                 </div>
                 <div className="navbar_helios-icon">
-                    <p>Account</p>
-                    <p>LOGIN</p>
-                    <p>FIND</p>
+                    <p>CART <IoCart style={
+                        {fontSize:"30px",color:"orange"}
+                    }  /></p>
+                    <p>LOGIN <IoMdLogIn style={
+                        {fontSize:"30px",color:"orange"}
+                    } /></p>
+                    <p>FIND <MdFindInPage  style={
+                        {fontSize:"30px",color:"orange"}
+                    }  /></p>
+                    
                 </div>
                 <hr style={{borderColor:"white"}}/>
                 <div className={`navbar_helios-detail ${isDetailVisible ? 'show' : 'hide'}`}>
@@ -83,15 +93,16 @@ function Navbar() {
                     >
                         <span className="navbar-toggler-icon" id="toggleIcon"></span>
                     </button>
-                    <button type="button" className="btn-close" aria-label="Close" onClick={handleToggleClick} style={{ display: `${isMenuVisible ? "none" : ""}`, color: "white", fontSize: "25px" }}></button>
+                    
                 </nav>
             </div>
             {isMenuVisible?
             <>
              
             </>:<>
-            
+          
             <div className="navbar-menu_responsive">
+            <button type="button" className="btn-close" aria-label="Close" onClick={handleToggleClick} style={{ display: `${isMenuVisible ? "none" : ""}`, color: "white", fontSize: "25px",paddingBottom:"20px" }}></button>
                 <p>JEWELRY</p>
                 <p>GIFT</p>
                 <p>COLLECTION</p>
