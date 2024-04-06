@@ -4,6 +4,7 @@ import { FaStar } from "react-icons/fa";
 import { CButton } from "@coreui/react";
 import useScrollStore from "../../zustand/scrollStore";
 import { throttle } from "lodash";
+import Button from "../custome/Button";
 
 function Introduction() {
   const introductionContentRef = useRef<HTMLDivElement>(null);
@@ -79,10 +80,7 @@ function Introduction() {
             <p>Size 12 (Pre-order)</p>
           </div>
           <div className="introduction-content_buy">
-            <CButton color="danger" >
-              Thêm Vào Giỏ Hàng
-
-            </CButton>
+           <Button name="Add To Cart" link ="/"></Button>
             <p>Tên sản phẩm: Nhẫn bạc S925 Abaddon Helios Silver Original</p>
             <p>Chất liệu: Bạc S925</p>
             <p>Loại đá sử dụng: Không</p>
