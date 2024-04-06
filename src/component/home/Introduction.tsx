@@ -20,6 +20,7 @@ function Introduction() {
   return (
     <div >
       <div className="introduction">
+      <h1>SẢN PHẨM NỔI BẬT</h1>
         <div  className={`introduction-img ${isSticky ? "sticky" : ""}`}>
           <CCarousel
             // interval={}

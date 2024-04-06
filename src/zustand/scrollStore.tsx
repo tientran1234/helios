@@ -13,7 +13,7 @@ const useScrollStore = create<ScrollStore>((set) => ({
     const introductionContentRef = document.querySelector('.introduction-content') as HTMLDivElement;
     if (introductionContentRef) {
       const introContentRect = introductionContentRef.getBoundingClientRect();
-      const isContentInView = introContentRect.top <= 100 && introContentRect.top >= -507;
+      const isContentInView = introContentRect.top <= 100 && introContentRect.top >= -607;
       set({ isSticky: isContentInView });
     }
   }

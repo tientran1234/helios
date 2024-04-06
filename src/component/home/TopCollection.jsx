@@ -4,8 +4,10 @@ import { CButton } from "@coreui/react";
 function TopCollection() {
     const {  isSticky } = useScrollStore();
   return (
-    <div  className={`${isSticky?"hide":""}`} style={{marginTop:"200px"}}>
-           <h1>SẢN PHẨM NỔI BẬT</h1>
+    <>
+    
+     <div  className={`${isSticky?"hide":""}`} style={{marginTop:"200px"}}>
+    
         <div className={`top-collection`} >
       
             <div className="top-collection_item">
@@ -28,6 +30,8 @@ function TopCollection() {
                 
         </div>
     </div>
+    </>
+   
   )
 }
 

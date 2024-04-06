@@ -7,6 +7,7 @@ import ListProduct from '../component/home/ListProduct';
 import Introduction from '../component/home/Introduction';
 import TopCollection from "../component/home/TopCollection";
 import Collab from "../component/home/Collab";
+import Footer from "../component/home/Footer";
 
 function Home() {
   const { isMenuVisible } = useStore();
@@ -20,6 +21,7 @@ function Home() {
         <Introduction/>
         <TopCollection/>
         <Collab/>
+        <Footer/>
       </>
         : <>
         </>}
