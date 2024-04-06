@@ -1,7 +1,13 @@
     $font-stack: "Oswald, sans-serif";
     $primary-color: white;
     $primary-background: black;
-    
+    ::-webkit-scrollbar-track{
+        width: 20px;
+    }
+    ::-webkit-scrollbar-thumb{
+        width: 20px;
+    }
+
     @-webkit-keyframes slide-top {
         0% {
             -webkit-transform: translate(-50%, 0);
@@ -77,20 +83,21 @@
         box-sizing: border-box;
         margin: 0;
         padding: 0;
-        font-size: 17px;
+        font-size: 20px;
         background-color: $primary-background !important;
 
     }
 
     h1,h2 {
         background-color: transparent !important;
-        font-size: 25px !important;
+        font-size: 50px !important;
         margin: 0 !important;
         padding: 20px 50px
     }
 
     p {
         background-color: transparent !important;
+
     }
 
     .navbar_helios {
@@ -98,7 +105,7 @@
         z-index: 1000;
 
         transition: top 0.3s ease-in-out;
-        height: 150px;
+        height: 200px;
         text-align: center;
         align-items: center;
         display: grid;
@@ -246,6 +253,7 @@
                 font-weight: bold;
                 top: 50%;
                 left: 50%;
+                width: 200px;
                 transform: translateX(-50%);
                 height: 50px;
                 display: block;
@@ -274,7 +282,7 @@
 
             p {
                 position: absolute;
-                font-size: 25px;
+                font-size: 50px;
                 background-color: transparent;
                 top: 30%;
                 width: 100%;
@@ -295,7 +303,7 @@
 
 
     .introduction {
-        
+        height: 1000px;
         display: grid;
         grid-template-columns: 2fr 1fr;
         background-color: $primary-background;
@@ -324,18 +332,23 @@
             }
 
             &.sticky {
-                grid-column-start: 1;
+              
                 position: fixed;
                 top: 150px;
-                left: 0;
-                width: 1430px;
+                top: 0;
+                right: 0;
+                left:0;
+                display: grid;
+                grid-template-columns: 2fr 1fr;
                 padding: 20px 50px;
-                height: 1500px;
-                z-index: 1;
+                grid-gap: 20px;
+                
+                &-content {
+                    grid-column-start: 2;
+                }
                 .introduction-img_item {
-                    display: grid;
-                    grid-template-columns: 1fr 1fr;
-                    grid-gap: 20px;
+                    grid-column-start: 1;
+                   
 
                     img {
                         width: 100%;
@@ -427,7 +440,7 @@
         color: white;
         text-align: center;
         margin-top: 0px;
-        height: 600px;
+        height: 750px;
          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
          
        
