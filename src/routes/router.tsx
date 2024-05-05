@@ -1,10 +1,28 @@
 
+
+import Product from "../component/product/Product"
+import Bracelet from "../pages/bracelet"
 import Home from "../pages/home"
+import Login from "../pages/login"
 const publicRoutes = [
-	{
-		path: '/',
-		element: <Home/>
-	}
+    {
+        path: '',
+        element: <Home />,
+    },
+    {
+        path: 'login',
+        element: <Login />,
+    },
+    {
+        path: 'product',
+        children: [
+			{element:<Product/>,index:true},
+            {
+                path: 'bracelet',
+                element: <Bracelet/>,
+            }
+        ]
+    }
 ]
 
 // const permissonRoutes = [

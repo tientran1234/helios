@@ -1,7 +1,6 @@
 import { useEffect, useRef } from "react";
 import { CCarousel, CCarouselItem } from "@coreui/react";
 import { FaStar } from "react-icons/fa";
-import { CButton } from "@coreui/react";
 import useScrollStore from "../../zustand/scrollStore";
 import { throttle } from "lodash";
 import Button from "../custome/Button";

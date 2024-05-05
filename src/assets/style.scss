@@ -355,10 +355,7 @@
         display: grid;
         grid-template-columns: 2fr 1fr;
         background-color: $primary-background;
-        grid-gap: 20px;
-        padding: 50px 50px;
-        margin-top: 100px;
-
+        padding: 0 20px;
         &-img {
 
             grid-column-start: 1;
@@ -389,11 +386,12 @@
                 left:0;
                 display: grid;
                 grid-template-columns: 2fr 1fr;
-                padding: 20px 50px;
+                padding: 50px 20px;
                 grid-gap: 20px;
                 
                 &-content {
                     grid-column-start: 2;
+                   
                 }
                 .introduction-img_item {
                     grid-column-start: 1;
@@ -415,7 +413,7 @@
 
         &-content {
             grid-column-start: 2;
-
+            padding: 40px;
             h1 {
                 padding: 20px 0;
             }
@@ -442,7 +440,7 @@
 
             }
 
-            margin-left: 100px;
+           
         }
     }
     //----------------------------Top Collection----------------------//
@@ -470,13 +468,10 @@
 
 
 .collab{
-    
-  
     display: grid;
     grid-auto-flow: column;
     grid-auto-columns: 20%;
     padding: 0 20px;
-  
     grid-gap: 20px;
     overflow-y: hidden;
     overflow-x: auto;
@@ -490,7 +485,7 @@
         color: white;
         text-align: center;
         margin-top: 0px;
-        height: 500px;
+        height: 450px;
          box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
          
        

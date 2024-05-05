@@ -43,9 +43,10 @@ const TriggerPart = styled('span', {
   })
   
   const Trigger = styled(Dialog.Trigger, {
+    marginTop:"10px",
+    width:"50%",
     border: 'none',
     fontWeight: 600,
-    cursor: 'pointer',
     background: 'transparent',
     position: 'relative',
     padding: 0,
@@ -87,7 +88,7 @@ function Button(props: ButtonProps) {
 
     return (
         <div>
-            <Dialog.Root  >
+            <Dialog.Root   >
                 <Link to={String(props.link)}>
                 <Trigger>
                     <TriggerShadow />

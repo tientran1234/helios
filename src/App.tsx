@@ -7,6 +7,8 @@ import getRoutesByPermission from './routes/router'
 function App() {
  
   const routes = getRoutesByPermission()
+ 
+  
 	const routing = useRoutes(routes!)
 
 

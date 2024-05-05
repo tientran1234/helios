@@ -3,7 +3,6 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import { IoMdLogIn } from "react-icons/io";
 import useStore from '../../zustand/changeToggle';
 import { MdFindInPage } from "react-icons/md";
-import { RiAccountCircleFill } from "react-icons/ri";
 import { IoCart } from "react-icons/io5";
 
 

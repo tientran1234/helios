@@ -12,7 +12,7 @@ function TopCollection() {
     <>
     
      <div  className={`${isSticky?"hide":""}`} style={{marginTop:"200px"}}>
-    
+    <h1>Top Collection</h1>
         <div className={`top-collection`} >
       
             <div className="top-collection_item">
